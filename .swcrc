@@ -1,0 +1,12 @@
+{
+  "jsc": {
+    "baseUrl": "./",
+    "parser": {
+      "syntax": "typescript",
+      "jsx": true
+    },
+    "paths": {
+      "@alias/file": ["./client/alias.ts"]
+    }
+  }
+}

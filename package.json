@@ -7,9 +7,9 @@
     "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
     "visualize": "meteor --production --extra-packages bundle-visualizer"
   },
-  
   "dependencies": {
     "@babel/runtime": "^7.20.7",
+    "@jonasmerlin/react-native-markdown-display": "^1.1.0",
     "meteor-node-stubs": "^1.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -27,9 +27,9 @@
       "server": "server/main.ts"
     },
     "testModule": "tests/main.ts",
-     "modern": {
+    "modern": {
       "transpiler": {
-        "verbose":true
+        "verbose": true
       }
     }
   }

@@ -3,10 +3,12 @@
     "baseUrl": "./",
     "parser": {
       "syntax": "typescript",
-      "jsx": true
+      "tsx": true
     },
     "paths": {
-      "@alias/file": ["./client/alias.ts"]
+      "@alias/file": ["./client/alias.ts"],
+      "react-native-svg": ["./node_modules/react-native-svg-web"],
+      "react-native-localize": ["node_modules/react-native-localize/dist/module/module.web"]
     }
   }
 }

@@ -1,6 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { importStrings } from "./innter/stringImports";
 
 export const Hello = () => {
+  importStrings("es")
+    .then((strings) => {
+      console.log("Loaded strings:", strings);
+    })
+    .catch((error) => {
+      console.error("Error loading strings:", error);
+    });
   const [counter, setCounter] = useState(0);
 
   const increment = () => {

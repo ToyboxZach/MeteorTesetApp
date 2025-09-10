@@ -6,6 +6,8 @@ import { bcrypt } from "bcrypt";
 console.log("bcrypt", bcrypt);
 import { ApiVersion, shopifyApi } from "@shopify/shopify-api";
 import "@shopify/shopify-api/dist/cjs/adapters/node";
+import "./first";
+console.log("I expect this to log second");
 
 shopifyApi({
   apiKey: "apiKey",

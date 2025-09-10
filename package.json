@@ -10,6 +10,7 @@
   "dependencies": {
     "@aws-sdk/client-s3": "^3.879.0",
     "@babel/runtime": "^7.20.7",
+    "@shopify/shopify-api": "^11.14.1",
     "@swc/helpers": "^0.5.17",
     "async-mutex": "^0.5.0",
     "bcrypt": "^6.0.0",

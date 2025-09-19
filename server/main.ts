@@ -8,14 +8,3 @@ import { ApiVersion, shopifyApi } from "@shopify/shopify-api";
 import "@shopify/shopify-api/dist/cjs/adapters/node";
 import "./first";
 console.log("I expect this to log second");
-
-shopifyApi({
-  apiKey: "apiKey",
-  apiSecretKey: "secret",
-  hostName: "host",
-  scopes: ["write_orders"],
-  isEmbeddedApp: true,
-  apiVersion: ApiVersion.July25
-
-  // SESSION_STORAGE: new Shopify.Session.CustomSessionStorage(StoreSession, GetSession, DeleteSession),
-});

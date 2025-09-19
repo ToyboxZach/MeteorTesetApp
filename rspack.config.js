@@ -24,24 +24,6 @@ const config = defineConfig((Meteor) => {
       enforceExtension: false,
       fullySpecified: false,
       extensions: [".web.ts", ".web.tsx", ".web.js", ".ts", ".tsx", ".js", ".jsx"]
-    },
-    module: {
-      rules: [
-        {
-          test: /\.js$/, // Target .js files
-          use: {
-            loader: "builtin:swc-loader",
-            options: {
-              jsc: {
-                parser: {
-                  syntax: "ecmascript",
-                  jsx: true // Enable JSX parsing for JavaScript files
-                }
-              }
-            }
-          }
-        }
-      ]
     }
   };
 });

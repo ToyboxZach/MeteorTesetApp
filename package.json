@@ -5,7 +5,6 @@
     "start": "meteor run",
     "test": "meteor test --once --driver-package meteortesting:mocha",
     "test-app": "meteor test --full-app --driver-package meteortesting:mocha",
-    "test-app-failure": "npm run test-app -- --once && unset MOCHA_INVERT       && npm run test-app  -- --once",
     "visualize": "meteor --production --extra-packages bundle-visualizer"
   },
   "dependencies": {
@@ -20,6 +19,7 @@
     "ip2location-nodejs": "^9.7.0",
     "meteor-node-stubs": "^1.2.5",
     "node-polyfill-webpack-plugin": "^4.1.0",
+    "puppeteer": "^24.31.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "selenium-webdriver": "^4.36.0"

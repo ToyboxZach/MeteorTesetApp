@@ -4,7 +4,7 @@ import { NonComplying } from "./nonComplying";
 
 export const App = () => (
   <div>
-    <h1>Welcome to Meteor!</h1>
+    <h1 id="title">Welcome to Meteor!</h1>
     <NonComplying />
     <Info />
   </div>

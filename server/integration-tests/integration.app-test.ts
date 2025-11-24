@@ -11,3 +11,4 @@ describe("Run integration tests", () => {
     assert.deepEqual(result, { isAppTestInitial: true, isAppTestNow: true });
   });
 });
+console.log("!!!");

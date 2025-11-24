@@ -4,7 +4,8 @@
   "scripts": {
     "start": "meteor run",
     "test": "meteor test --once --driver-package meteortesting:mocha",
-    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "test-app": "meteor test --full-app --driver-package meteortesting:mocha",
+    "test-app-failure": "npm run test-app -- --once && unset MOCHA_INVERT       && npm run test-app  -- --once",
     "visualize": "meteor --production --extra-packages bundle-visualizer"
   },
   "dependencies": {
@@ -24,10 +25,10 @@
     "selenium-webdriver": "^4.36.0"
   },
   "devDependencies": {
-    "@meteorjs/rspack": "^0.0.56",
+    "@meteorjs/rspack": "^0.1.6",
     "@rsdoctor/rspack-plugin": "^1.2.3",
-    "@rspack/cli": "^1.5.3",
-    "@rspack/core": "^1.5.3",
+    "@rspack/cli": "^1.6.0",
+    "@rspack/core": "^1.6.0",
     "@rspack/plugin-react-refresh": "^1.4.3",
     "@types/mocha": "^8.2.3",
     "@types/node": "^18.13.0",

@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.879.0",
-    "@babel/runtime": "^7.20.7",
+    "@babel/runtime": "^7.28.4",
     "@shopify/shopify-api": "^11.14.1",
     "@swc/helpers": "^0.5.17",
     "async-mutex": "^0.5.0",
@@ -25,11 +25,6 @@
     "selenium-webdriver": "^4.36.0"
   },
   "devDependencies": {
-    "@meteorjs/rspack": "^0.1.6",
-    "@rsdoctor/rspack-plugin": "^1.2.3",
-    "@rspack/cli": "^1.6.0",
-    "@rspack/core": "^1.6.0",
-    "@rspack/plugin-react-refresh": "^1.4.3",
     "@types/mocha": "^8.2.3",
     "@types/node": "^18.13.0",
     "@types/react": "^18.0.26",
@@ -41,7 +36,6 @@
     "mainModule": {
       "client": "client/main.tsx",
       "server": "server/main.ts"
-    },
-    "modern": true
+    }
   }
 }

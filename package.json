@@ -27,10 +27,10 @@
     "three": "^0.181.2"
   },
   "devDependencies": {
-    "@meteorjs/rspack": "^0.1.6",
+    "@meteorjs/rspack": "^0.3.54",
     "@rsdoctor/rspack-plugin": "^1.2.3",
-    "@rspack/cli": "^1.6.0",
-    "@rspack/core": "^1.6.0",
+    "@rspack/cli": "^1.6.5",
+    "@rspack/core": "^1.6.5",
     "@rspack/plugin-react-refresh": "^1.4.3",
     "@types/mocha": "^8.2.3",
     "@types/node": "^18.13.0",

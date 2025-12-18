@@ -1,7 +1,7 @@
 import assert from "assert";
 import { Meteor } from "meteor/meteor";
-
 import puppeteer from "puppeteer";
+
 const width = 1400;
 const height = 1000;
 describe("Run integration tests", () => {
@@ -14,6 +14,7 @@ describe("Run integration tests", () => {
     assert.deepEqual(result, { isAppTestInitial: true, isAppTestNow: true });
   });
   it("Runs browser based integration tests", async () => {
+    assert(this);
     console.log("STARTING BROWSER TEST");
     const props = {
       headless: !!process.env.HEADLESS,

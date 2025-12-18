@@ -14,15 +14,17 @@
     "@swc/helpers": "^0.5.17",
     "async-mutex": "^0.5.0",
     "bcrypt": "^6.0.0",
-    "chromedriver": "^141.0.3",
+    "chromedriver": "^143.0.0",
     "fflate-unzip": "^0.7.0",
+    "html-rspack-plugin": "^6.1.4",
     "ip2location-nodejs": "^9.7.0",
     "meteor-node-stubs": "^1.2.5",
     "node-polyfill-webpack-plugin": "^4.1.0",
     "puppeteer": "^24.31.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "selenium-webdriver": "^4.36.0"
+    "selenium-webdriver": "^4.36.0",
+    "three": "^0.181.2"
   },
   "devDependencies": {
     "@meteorjs/rspack": "^0.1.6",

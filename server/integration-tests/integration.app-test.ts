@@ -38,7 +38,9 @@ describe("Run integration tests", () => {
     page.goto("http://localhost:3000/");
     console.log("OPEN PAGE");
 
+    console.log("WAITING FOR SELECTOR");
     await page.waitForSelector("#title");
+    console.log("GOT SELECTOR");
   });
 });
 console.log("!!!");

@@ -15,6 +15,7 @@ describe("Run integration tests", () => {
   });
   it("Runs browser based integration tests", async () => {
     console.log("STARTING BROWSER TEST");
+    assert(this);
     const props = {
       headless: !!process.env.HEADLESS,
       timeout: 15 * 1000,

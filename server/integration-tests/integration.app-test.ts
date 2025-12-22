@@ -15,7 +15,6 @@ describe("Run integration tests", () => {
   });
   it("Runs browser based integration tests", async () => {
     console.log("STARTING BROWSER TEST");
-    assert(this);
     const props = {
       headless: !!process.env.HEADLESS,
       timeout: 15 * 1000,
@@ -40,8 +39,10 @@ describe("Run integration tests", () => {
     console.log("OPEN PAGE");
 
     console.log("WAITING FOR SELECTOR");
+
     await page.waitForSelector("#title");
     console.log("GOT SELECTOR");
+    assert(this);
   });
 });
 console.log("!!!");
